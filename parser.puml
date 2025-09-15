@@ -1,0 +1,88 @@
+@startuml
+class model.dao.produtosDAO {
+}
+class controler.conectaDAO {
++ Connection connectDB()
+}
+
+class model.dao.vendasDAO {
+}
+class model.bean.produtos {
+- int produtos_id
+- String nome_produto
+- String quantidade
+- String valor
+- String marca
++ int getProdutos_id()
++ void setProdutos_id(int)
++ String getNome_produto()
++ void setNome_produto(String)
++ String getQuantidade()
++ void setQuantidade(String)
++ String getValor()
++ void setValor(String)
++ String getMarca()
++ void setMarca(String)
+}
+
+
+class model.dao.usuariosDAO {
+}
+class model.bean.vendas {
+- int vendas_id
+- String data_realizada
+- String cliente_id
+- String produto_id
++ int getVendas_id()
++ void setVendas_id(int)
++ String getData_realizada()
++ void setData_realizada(String)
++ String getCliente_id()
++ void setCliente_id(String)
++ String getProduto_id()
++ void setProduto_id(String)
+}
+
+
+class model.bean.cliente {
+- int cliente_id
+- String nome
+- String endereco
+- String cpf
+- String telefone
+- String email
++ int getCliente_id()
++ void setCliente_id(int)
++ String getNome()
++ void setNome(String)
++ String getEndereco()
++ void setEndereco(String)
++ String getCpf()
++ void setCpf(String)
++ String getTelefone()
++ void setTelefone(String)
++ String getEmail()
++ void setEmail(String)
+}
+
+
+class model.dao.clientesDAO {
+}
+class prototype.main {
++ {static} void main(String[])
+}
+
+class model.bean.usuario {
+- int usuario_id
+- String login
+- String senha
++ int getUsuario_id()
++ void setUsuario_id(int)
++ String getLogin()
++ void setLogin(String)
++ String getSenha()
++ void setSenha(String)
+}
+
+
+@enduml
